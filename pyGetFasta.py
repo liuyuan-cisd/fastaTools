@@ -3,7 +3,7 @@ from pyfasta import Fasta
 def getopt():
     '''parsing the opts'''
     parser=argparse.ArgumentParser(
-                description='getFasta.py: A program to get fasta file accroding bed file',
+                description='pyGetFasta.py: A program to get fasta file accroding bed file',
                 usage='pyGetFasta.py -g genomefile -b bedfile -o outputfile [-l int]'
             )
     parser.add_argument('-g','--genome',type=str,help="The path of genome file,should be a fasta file",required=True)
