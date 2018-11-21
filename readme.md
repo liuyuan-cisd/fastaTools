@@ -39,3 +39,19 @@ selectBed.py:
 		1.程序用来根据提供的关键字从bed文件中提取相应的序列，如果提供 -n 参数则会选择相应的数量出来
 		2.不要在pycharm中运行此程序，在pycharm中运行时不知道为什么不能把所有选取得行完全写到输出文件，
 		  目前为止原因，应该是pycharm内存原因之类的
+
+selectFasta.py
+	
+	用来从fasta文件中提取一部分序列出来
+
+	使用方法：selectFasta.py -i inputfile -o outputfile -n number [-k keyword]
+
+	依赖：
+		python3.6（如在python2中运行修改print语句即可）
+	参数说明：
+		-i:输入文件，必选参数
+		-o:输出文件，必选参数
+		-n:选取数量，必选参数
+		-key：关键字，可选参数
+	ps：
+		1.如果不选参数 -k 则在所有序列中提取，如果选择 -k参数，程序会在包含输入关键字的序列中选择
