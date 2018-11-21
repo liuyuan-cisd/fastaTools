@@ -9,7 +9,7 @@ def getopt():
     '''parsing the opts'''
     parser=argparse.ArgumentParser(
                 description='selectBed.py: A program to get select bed file accroding seqname',
-                usage='selectBed.py -b bedfile -o outputfile -n number'
+                usage='selectBed.py -b bedfile -o outputfile -key keyword -n number'
             )
     parser.add_argument('-key','--keyword',type=str,help="The name of sequences which you want wo get",required=True)
     parser.add_argument('-b','--bed',type=argparse.FileType('r'),help="bed file path",required=True)
