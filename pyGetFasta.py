@@ -1,4 +1,4 @@
-import argparse,sys
+import argparse
 from pyfasta import Fasta
 def getopt():
     '''parsing the opts'''
