@@ -21,3 +21,20 @@ pyGetFasta.py
 		2.如果bed中的序列多请分多次提取，如果序列过多会Fasta模块中的数据结构会溢出，
 		 一次提取10W条数据应该没问题
 		3.如果选择参数 -l 会根据 -l 的值将序列进行分段，默认不分段
+
+selectBed.py:
+	
+	用来从bed文件中随机挑选出来一部分出来
+	
+	使用方法：selectBed.py -b bedfile -o outputfile -key keyword -n number
+	
+	依赖：
+		python3.6（如在python2中运行修改print语句即可）
+	参数说明：
+		-b:bed文件，必选参数
+		-o:输出文件，必选参数
+		-key：关键字，必选参数
+		-n:选取数量，可选参数
+	ps：
+		1.程序用来根据提供的关键字从bed文件中提取相应的序列，如果提供 -n 参数则会选择相应的数量出来
+		
