@@ -14,4 +14,4 @@ selectFasta.py
 
 	用来从fasta文件中随机提取一部分序列出来，可以根据fasta文件标识行信息提取
 	
-！[使用方法]（https://github.com/Liuyuan2018/fastaTools/wiki）
+！[使用方法]（https://github.com/Liuyuan2018/fastaTools/wiki ）
